@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Incompetech Mix — Kevin MacLeod</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="page">
+
+    <img class="cover"
+         src="https://picsum.photos/seed/album/600/600.webp"
+         srcset="https://picsum.photos/seed/album/300/300.webp 300w,
+                 https://picsum.photos/seed/album/600/600.webp 600w"
+         sizes="(max-width: 700px) 60vw, 232px"
+         width="600" height="600" loading="lazy"
+         alt="Обкладинка альбому Incompetech Mix">
+
+    <section class="info">
+      <p class="type">Альбом</p>
+      <h1>Incompetech Mix</h1>
+      <p class="meta"><b>Kevin MacLeod</b> • 6 пісень</p>
+    </section>
+
+    <div class="actions">
+      <button type="button" class="play" aria-label="Відтворити">
+        <svg class="icon-play" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8 5v14l11-7z" fill="currentColor"/>
+        </svg>
+        <svg class="icon-pause" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 5h4v14H6zM14 5h4v14h-4z" fill="currentColor"/>
+        </svg>
+      </button>
+
+      <button type="button" class="icon-btn like" aria-label="Вподобати" aria-pressed="false">
+        <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 5a5.5 5.5 0 0 1 9.5 7c-2.5 4.5-9.5 9-9.5 9z" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <span class="like-count">128</span>
+      </button>
+
+      <button type="button" class="icon-btn share" aria-label="Поділитися">
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="18" cy="5" r="3" fill="currentColor"/>
+          <circle cx="6" cy="12" r="3" fill="currentColor"/>
+          <circle cx="18" cy="19" r="3" fill="currentColor"/>
+          <path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </button>
+
+      <button type="button" class="icon-btn theme" aria-label="Змінити тему">
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z" fill="currentColor"/>
+        </svg>
+      </button>
+
+      <p class="hint">Space — пауза / відтворення</p>
+    </div>
+
+    <table class="tracks">
+      <caption class="visually-hidden">Трек-лист альбому Incompetech Mix</caption>
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col" colspan="2">Назва</th>
+          <th scope="col" aria-label="Тривалість">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="active" data-src="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Monkeys%20Spinning%20Monkeys.mp3"><td>1</td><td class="col-img"><img src="https://picsum.photos/seed/t1/80/80.webp" width="40" height="40" loading="lazy" alt="Monkeys Spinning Monkeys"></td><td><span class="title">Monkeys Spinning Monkeys</span><span class="artist">Kevin MacLeod</span></td><td class="time">--:--</td></tr>
+        <tr data-src="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Sneaky%20Snitch.mp3"><td>2</td><td class="col-img"><img src="https://picsum.photos/seed/t2/80/80.webp" width="40" height="40" loading="lazy" alt="Sneaky Snitch"></td><td><span class="title">Sneaky Snitch</span><span class="artist">Kevin MacLeod</span></td><td class="time">--:--</td></tr>
+        <tr data-src="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Fluffing%20a%20Duck.mp3"><td>3</td><td class="col-img"><img src="https://picsum.photos/seed/t3/80/80.webp" width="40" height="40" loading="lazy" alt="Fluffing a Duck"></td><td><span class="title">Fluffing a Duck</span><span class="artist">Kevin MacLeod</span></td><td class="time">--:--</td></tr>
+        <tr data-src="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Carefree.mp3"><td>4</td><td class="col-img"><img src="https://picsum.photos/seed/t4/80/80.webp" width="40" height="40" loading="lazy" alt="Carefree"></td><td><span class="title">Carefree</span><span class="artist">Kevin MacLeod</span></td><td class="time">--:--</td></tr>
+        <tr data-src="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Wallpaper.mp3"><td>5</td><td class="col-img"><img src="https://picsum.photos/seed/t5/80/80.webp" width="40" height="40" loading="lazy" alt="Wallpaper"></td><td><span class="title">Wallpaper</span><span class="artist">Kevin MacLeod</span></td><td class="time">--:--</td></tr>
+        <tr data-src="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Investigations.mp3"><td>6</td><td class="col-img"><img src="https://picsum.photos/seed/t6/80/80.webp" width="40" height="40" loading="lazy" alt="Investigations"></td><td><span class="title">Investigations</span><span class="artist">Kevin MacLeod</span></td><td class="time">--:--</td></tr>
+      </tbody>
+    </table>
+
+    <section class="reviews">
+      <h2>Відгуки <span class="reviews-count">0</span></h2>
+
+      <form class="review-form" novalidate>
+        <div class="field">
+          <label for="name">Ім'я</label>
+          <input id="name" name="name" type="text" placeholder="Ваше ім'я">
+          <p class="error" aria-live="polite"></p>
+        </div>
+        <div class="field">
+          <label for="text">Відгук</label>
+          <textarea id="text" name="text" rows="3" maxlength="300" placeholder="Що думаєте про альбом?"></textarea>
+          <p class="error" aria-live="polite"></p>
+          <p class="counter"><span class="chars">0</span>/300</p>
+        </div>
+        <button type="submit" class="submit">Надіслати</button>
+      </form>
+
+      <ul class="review-list"></ul>
+    </section>
+
+    <div class="player">
+      <img class="now-cover" src="https://picsum.photos/seed/t1/80/80.webp" width="56" height="56" loading="lazy" alt="">
+      <div>
+        <p class="title now-title">Monkeys Spinning Monkeys</p>
+        <p class="artist">Kevin MacLeod</p>
+      </div>
+      <audio controls preload="metadata" aria-label="Аудіоплеєр">
+        <source src="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Monkeys%20Spinning%20Monkeys.mp3" type="audio/mpeg">
+        Ваш браузер не підтримує audio.
+      </audio>
+    </div>
+
+    <div class="toast" role="status"></div>
+
+  </main>
+</body>
+</html>
